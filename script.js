@@ -105,11 +105,6 @@ equal.addEventListener("click", function () {
 
     if (myPreviousNumber.length > 0) {
 
-        // console.log(myPreviousNumber);
-
-        // console.log(chosenManipulation);
-
-        // console.log(myCurrentNumber);
         calculateSum(myPreviousNumber, chosenManipulation, myCurrentNumber);
 
     } else {
@@ -155,8 +150,6 @@ number7.addEventListener("click", function () {
 
     calcDisplay.innerText += 7;
 
-    // console.log(myCurrentNumber);
-
 });
 
 number8.addEventListener("click", function () {
@@ -172,8 +165,6 @@ number8.addEventListener("click", function () {
 
     calcDisplay.innerText += 8;
 
-    // console.log(myCurrentNumber);
-
 });
 
 number9.addEventListener("click", function () {
@@ -188,8 +179,6 @@ number9.addEventListener("click", function () {
     myCurrentNumber.push(9);
 
     calcDisplay.innerText += 9;
-
-    // console.log(myCurrentNumber);
 
 });
 
@@ -209,8 +198,6 @@ number4.addEventListener("click", function () {
 
     calcDisplay.innerText += 4;
 
-    //console.log(myCurrentNumber);
-
 });
 
 number5.addEventListener("click", function () {
@@ -226,8 +213,6 @@ number5.addEventListener("click", function () {
 
     calcDisplay.innerText += 5;
 
-    //console.log(myCurrentNumber);
-
 });
 
 number6.addEventListener("click", function () {
@@ -242,8 +227,6 @@ number6.addEventListener("click", function () {
     myCurrentNumber.push(6);
 
     calcDisplay.innerText += 6;
-
-    //console.log(myCurrentNumber);
 
 });
 
@@ -262,8 +245,6 @@ number1.addEventListener("click", function () {
 
     calcDisplay.innerText += 1;
 
-    //console.log(myCurrentNumber);
-
 });
 
 number2.addEventListener("click", function () {
@@ -278,8 +259,6 @@ number2.addEventListener("click", function () {
     myCurrentNumber.push(2);
 
     calcDisplay.innerText += 2;
-
-    //console.log(myCurrentNumber);
 
 });
 
@@ -296,7 +275,6 @@ number3.addEventListener("click", function () {
 
     calcDisplay.innerText += 3;
 
-    //console.log(myCurrentNumber);
 });
 
 number0.addEventListener("click", function () {
@@ -312,12 +290,10 @@ number0.addEventListener("click", function () {
 
     calcDisplay.innerText += 0;
 
-    // console.log(myCurrentNumber);
-
 });
 
 
-// funktion som kallar när man trycker på likamed, då räknas allt ihop
+// funktion som kallaa när man trycker på likamed, då räknas allt ihop
 
 function calculateSum(firstnumber, manipulation, secondnumber) {
 
@@ -345,14 +321,11 @@ function calculateSum(firstnumber, manipulation, secondnumber) {
 
     if (manipulation === "*") {
 
-        console.log("du vill gångra");
         result = parseInt(firstNumberToCalculate) * parseInt(secondNumberToCalculate);
 
     }
 
     if (manipulation === "/") {
-
-        console.log("du vill dela");
 
         result = parseInt(firstNumberToCalculate) / parseInt(secondNumberToCalculate);
 
@@ -360,23 +333,18 @@ function calculateSum(firstnumber, manipulation, secondnumber) {
 
     if (manipulation === "+") {
 
-        console.log("du vill plussa");
-
         result = parseInt(firstNumberToCalculate) + parseInt(secondNumberToCalculate);
 
     }
 
     if (manipulation === "-") {
 
-        console.log("du vill minus");
-
         result = parseInt(firstNumberToCalculate) - parseInt(secondNumberToCalculate);
 
     }
 
     calcDisplay.innerText = result;
-    console.log(result);
-
+    
     myCurrentNumber = [];
 
     myPreviousNumber = [];
