@@ -130,6 +130,8 @@ divide.addEventListener("click", function () {
 
         myCurrentNumber = [];
 
+        calcDisplay.innerText = "/";
+
     } else {
         alert("kan bara räkna 2 siffror åt gången");
     }
@@ -144,6 +146,7 @@ number7.addEventListener("click", function () {
     if (result) {
 
         calcDisplay.innerText = "";
+        result = "";
 
     }
 
@@ -161,6 +164,7 @@ number8.addEventListener("click", function () {
     if (result) {
 
         calcDisplay.innerText = "";
+        result = "";
 
     }
 
@@ -177,6 +181,7 @@ number9.addEventListener("click", function () {
     if (result) {
 
         calcDisplay.innerText = "";
+        result = "";
 
     }
 
@@ -196,6 +201,7 @@ number4.addEventListener("click", function () {
     if (result) {
 
         calcDisplay.innerText = "";
+        result = "";
 
     }
 
@@ -212,6 +218,7 @@ number5.addEventListener("click", function () {
     if (result) {
 
         calcDisplay.innerText = "";
+        result = "";
 
     }
 
@@ -228,6 +235,7 @@ number6.addEventListener("click", function () {
     if (result) {
 
         calcDisplay.innerText = "";
+        result = "";
 
     }
 
@@ -246,6 +254,7 @@ number1.addEventListener("click", function () {
     if (result) {
 
         calcDisplay.innerText = "";
+        result = "";
 
     }
 
@@ -262,6 +271,7 @@ number2.addEventListener("click", function () {
     if (result) {
 
         calcDisplay.innerText = "";
+        result = "";
 
     }
 
@@ -278,6 +288,7 @@ number3.addEventListener("click", function () {
     if (result) {
 
         calcDisplay.innerText = "";
+        result = "";
 
     }
 
@@ -293,6 +304,7 @@ number0.addEventListener("click", function () {
     if (result) {
 
         calcDisplay.innerText = "";
+        result = "";
 
     }
 
