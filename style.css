@@ -51,9 +51,15 @@ body {
     align-items: center;
     color: cornsilk;
     font-size: 3rem;
-    
-
 }
+
+#equal{
+    background-color: indianred;
+}
+
+/* #ac {
+    background-color: hotpink;
+} */
 
 #calcBody div:hover {
 

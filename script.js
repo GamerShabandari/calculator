@@ -16,7 +16,7 @@ const number3 = document.getElementById("number3");
 const plus = document.getElementById("plus");
 
 const number0 = document.getElementById("number0");
-const ac = document.getElementById("ac");
+const comma = document.getElementById("comma");
 const equal = document.getElementById("equal");
 const divide = document.getElementById("divide");
 
@@ -86,17 +86,34 @@ plus.addEventListener("click", function () {
 
 });
 
-ac.addEventListener("click", function () {
+// ac.addEventListener("click", function () {
 
-    result = "";
+//     result = "";
 
-    myCurrentNumber = [];
+//     myCurrentNumber = [];
 
-    myPreviousNumber = [];
+//     myPreviousNumber = [];
 
-    chosenManipulation = "";
+//     chosenManipulation = "";
 
-    calcDisplay.innerText = "";
+//     calcDisplay.innerText = "";
+
+
+// });
+
+comma.addEventListener("click", function () {
+
+    if (result) {
+
+        calcDisplay.innerText = "";
+        result = "";
+
+    }
+
+
+    myCurrentNumber.push(".");
+
+    calcDisplay.innerText += ".";
 
 
 });
@@ -321,25 +338,26 @@ function calculateSum(firstnumber, manipulation, secondnumber) {
 
     if (manipulation === "*") {
 
-        result = parseInt(firstNumberToCalculate) * parseInt(secondNumberToCalculate);
+        result = Number(firstNumberToCalculate) * Number(secondNumberToCalculate);
+
 
     }
 
     if (manipulation === "/") {
 
-        result = parseInt(firstNumberToCalculate) / parseInt(secondNumberToCalculate);
+        result = Number(firstNumberToCalculate) / Number(secondNumberToCalculate);
 
     }
 
     if (manipulation === "+") {
 
-        result = parseInt(firstNumberToCalculate) + parseInt(secondNumberToCalculate);
+        result = Number(firstNumberToCalculate) + Number(secondNumberToCalculate);
 
     }
 
     if (manipulation === "-") {
 
-        result = parseInt(firstNumberToCalculate) - parseInt(secondNumberToCalculate);
+        result = Number(firstNumberToCalculate) - Number(secondNumberToCalculate);
 
     }
 
