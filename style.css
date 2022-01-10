@@ -18,11 +18,12 @@ body {
     justify-content:center;
     align-items: center;
     border: 1px solid black;
-    background-color: blanchedalmond;
+    background-color: rgb(40, 44, 44);
     height: 10%;
     width: 100%;
     font-size: 3rem;
     font-family:Arial, Helvetica, sans-serif;
+    color: floralwhite;
     letter-spacing: 5px;
     padding: 20px;   
 }
@@ -41,9 +42,9 @@ body {
 }
 
 #calcBody div {
-    border-radius: 10%;
+    border-radius: 5%;
     border: 1px solid black;
-    height: 19%;
+    height: 15%;
     width:  19%;
     margin: 0%;
     display: flex;
@@ -52,6 +53,12 @@ body {
     color: cornsilk;
     font-size: 3rem;
 }
+
+#ac{
+    flex-grow: 1;
+    background-color:darkgray;
+}
+
 
 #equal{
     background-color: indianred;

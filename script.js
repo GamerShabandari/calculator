@@ -86,20 +86,20 @@ plus.addEventListener("click", function () {
 
 });
 
-// ac.addEventListener("click", function () {
+ac.addEventListener("click", function () {
 
-//     result = "";
+    result = "";
 
-//     myCurrentNumber = [];
+    myCurrentNumber = [];
 
-//     myPreviousNumber = [];
+    myPreviousNumber = [];
 
-//     chosenManipulation = "";
+    chosenManipulation = "";
 
-//     calcDisplay.innerText = "";
+    calcDisplay.innerText = "";
 
 
-// });
+});
 
 comma.addEventListener("click", function () {
 
