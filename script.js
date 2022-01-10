@@ -36,13 +36,13 @@ multiply.addEventListener("click", function () {
 
     if (myPreviousNumber.length === 0) {
 
-        chosenManipulation = "*"
+        chosenManipulation = "×"
 
         myPreviousNumber = myCurrentNumber;
 
         myCurrentNumber = [];
 
-        calcDisplay.innerText = "*";
+        calcDisplay.innerText = "×";
 
     } else {
         alert("kan bara räkna 2 siffror åt gången");
@@ -336,7 +336,7 @@ function calculateSum(firstnumber, manipulation, secondnumber) {
 
     }
 
-    if (manipulation === "*") {
+    if (manipulation === "×") {
 
         result = Number(firstNumberToCalculate) * Number(secondNumberToCalculate);
 
